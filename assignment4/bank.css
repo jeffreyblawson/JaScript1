@@ -1,0 +1,18 @@
+.table {
+  margin: auto;
+  width: auto !important;
+}
+table th {
+  text-align: center;
+}
+label {
+  display: flex;
+  padding: 5px;
+}
+body {
+  background-image: url("invest.img");
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-position: center;
+  background-color: #d1f3d5;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>photo album</title>
+  </head>
+
+  <body id="body" style="text-align: center">
+    <h1 style="color: green">Photo album</h1>
+
+    <h3>Click on the button to add image element</h3>
+
+    <button onclick="add()">click here</button>
+
+    <h2 id="result" style="color: green"></h2>
+
+    <script>
+      let res = document.getElementById("result");
+
+      function add() {
+        let url = prompt(
+          "enter image url",
+          "https://ik.imagekit.io/6pj2fdgsmus/digitalworkshopcenter/wp-content/uploads/2021/01/Digital-Workshop-Center-Trade-School.png"
+        );
+        let img = new Image();
+        img.src = url;
+        document.getElementById("body").appendChild(img);
+        res.innerHTML = "Image Element Added.";
+      }
+    </script>
+  </body>
+</html>
